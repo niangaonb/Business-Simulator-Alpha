@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="726.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niangaoa.YingYe.Ctrller.YingYeGameCtrl">
+    <GridPane layoutY="36.0" styleClass="menu1" stylesheets="@../AllCss.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="名称" textAlignment="CENTER"
+              wrappingWidth="101.240234375">
+            <GridPane.margin>
+                <Insets/>
+            </GridPane.margin>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="价格/占用空间" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="拥有数量" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="购入" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="3"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="售出" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="4"/>
+        <Button fx:id="buy1" mnemonicParsing="false" onAction="#onBuy1" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        <Button fx:id="sell1" mnemonicParsing="false" onAction="#onSell1" prefHeight="211.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <Button fx:id="buy2" mnemonicParsing="false" onAction="#onBuy2" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Button fx:id="sell2" mnemonicParsing="false" onAction="#onSell2" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii True专辑" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="1"/>
+        <Text fx:id="have1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Text fx:id="have2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii Stories专辑" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="2"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3500/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii The Singles专辑" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="3"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Text fx:id="have3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button fx:id="buy3" mnemonicParsing="false" onAction="#onBuy3" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        <Button fx:id="sell3" mnemonicParsing="false" onAction="#onSell3" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="实体比特币" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="4"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5000000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Text fx:id="have4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <Button fx:id="buy4" mnemonicParsing="false" onAction="#onBuy4" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+        <Button fx:id="sell4" mnemonicParsing="false" onAction="#onSell4" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="特拉斯汽车" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="5"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="200000/10" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <Text fx:id="have5" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+        <Button fx:id="buy5" mnemonicParsing="false" onAction="#onBuy5" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+        <Button fx:id="sell5" mnemonicParsing="false" onAction="#onSell5" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="双耐克足球鞋" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="6"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="50000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+        <Text fx:id="have6" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+        <Button fx:id="buy6" mnemonicParsing="false" onAction="#onBuy6" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+        <Button fx:id="sell6" mnemonicParsing="false" onAction="#onSell6" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="败家之眼电脑" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="7"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100000/2" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+        <Text fx:id="have7" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+        <Button fx:id="buy7" mnemonicParsing="false" onAction="#onBuy7" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="7"/>
+        <Button fx:id="sell7" mnemonicParsing="false" onAction="#onSell7" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="7"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="黄牛114514ti显卡" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="8"/>
+        <Button fx:id="sell8" mnemonicParsing="false" onAction="#onSell8" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="8"/>
+        <Button fx:id="buy8" mnemonicParsing="false" onAction="#onBuy8" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="8"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+        <Text fx:id="have8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="8"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="威化手机tema 40pro" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="9"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+        <Text fx:id="have9" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="9"/>
+        <Button fx:id="sell9" mnemonicParsing="false" onAction="#onSell9" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="9"/>
+        <Button fx:id="buy9" mnemonicParsing="false" onAction="#onBuy9" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="9"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="一元辣条" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="10"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1/1" textAlignment="CENTER" wrappingWidth="101.240234375"
+              GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+        <Text fx:id="have10" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="10"/>
+        <Button fx:id="sell10" mnemonicParsing="false" onAction="#onSell10" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="10"/>
+        <Button fx:id="buy10" mnemonicParsing="false" onAction="#onBuy10" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="10"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FN-57+5.7x28mm SS190" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="11"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="30000/1" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+        <Text fx:id="have11" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="11"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="非洲大红钻" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.rowIndex="12"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8000000/5(自带保险箱)" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="12"/>
+        <Text fx:id="have12" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER"
+              wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="12"/>
+        <Button fx:id="sell11" mnemonicParsing="false" onAction="#onSell11" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="11"/>
+        <Button fx:id="buy12" mnemonicParsing="false" onAction="#onBuy12" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="12"/>
+        <Button fx:id="sell12" mnemonicParsing="false" onAction="#onSell12" prefHeight="60.0" prefWidth="100.0"
+                text="售出" GridPane.columnIndex="4" GridPane.rowIndex="12"/>
+        <Button fx:id="buy11" mnemonicParsing="false" onAction="#onBuy11" prefHeight="60.0" prefWidth="100.0"
+                text="购买" GridPane.columnIndex="3" GridPane.rowIndex="11"/>
+    </GridPane>
+    <Text layoutX="2.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="普通市场"/>
+    <Pane layoutY="499.0" prefHeight="227.0" prefWidth="502.0" styleClass="gui1" stylesheets="@../AllCss.css">
+        <Text layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="金钱:"/>
+        <Text fx:id="money" layoutX="27.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0"/>
+        <Text layoutX="105.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="健康值:"
+              wrappingWidth="40.0"/>
+        <Text fx:id="Health" layoutX="145.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100"/>
+        <Text layoutX="213.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="信誉:"/>
+        <Text layoutX="240.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100"/>
+        <Text layoutX="300.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="仓库空间:"/>
+        <Text fx:id="storage" layoutX="351.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3000"/>
+        <Text layoutX="2.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="防范值:"/>
+        <Text layoutX="41.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0"/>
+        <Text layoutX="105.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="疲劳度:"/>
+        <Text layoutX="143.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0"/>
+        <Text layoutX="214.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="等级:"/>
+        <Text layoutX="239.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1"/>
+        <Text layoutX="300.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="经验:"/>
+        <Text layoutX="326.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0"/>
+        <Text layoutX="2.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="饥饿值:"/>
+        <Text layoutX="41.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0"/>
+        <Button fx:id="read" layoutX="104.0" layoutY="88.0" mnemonicParsing="false" onAction="#onRead" text="读取"/>
+        <Button fx:id="write" layoutX="166.0" layoutY="88.0" mnemonicParsing="false" onAction="#onWrite"
+                stylesheets="@../AllCss.css" text="写入"/>
+    </Pane>
+    <Text layoutX="2.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="人物属性"/>
+    <Pane layoutX="528.0" layoutY="36.0" prefHeight="68.0" prefWidth="465.0" styleClass="gui1"
+          stylesheets="@../AllCss.css">
+        <Button fx:id="map" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#onMapChick"
+                text="地图"/>
+        <Button layoutX="213.0" layoutY="29.0" mnemonicParsing="false" text="升级仓库"/>
+        <Text layoutX="124.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="你需要114514元以及5等级才能升级仓库" textAlignment="CENTER" wrappingWidth="243.0"/>
+        <Button fx:id="Sleep" layoutX="412.0" layoutY="29.0" mnemonicParsing="false" onAction="#onSleep"
+                text="睡觉"/>
+    </Pane>
+    <Text layoutX="638.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="第    天" wrappingWidth="263.0">
+        <font>
+            <Font size="80.0"/>
+        </font>
+    </Text>
+    <Text fx:id="day" fill="RED" layoutX="718.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00"
+          textAlignment="CENTER" wrappingWidth="94.0">
+        <font>
+            <Font size="80.0"/>
+        </font>
+    </Text>
+</Pane>

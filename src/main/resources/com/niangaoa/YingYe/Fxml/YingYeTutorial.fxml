@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.niangaoa.YingYe.Ctrller.YingYeTutorialCtrl">
+   <ScrollPane prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="673.0" prefWidth="584.0">
+         <Text fill="RED" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="注意:本游戏暂时没有自动保存功能,请各位玩家玩完后点击保存!">
+            <font>
+               <Font size="21.0"/>
+            </font>
+         </Text>
+         <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="本教程很粗略,更多内容还是自己去摸索吧qwq">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Text>
+         <Text layoutX="14.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="玩法呢就是你可以购买物品以及售出物品，物品的价格会随着时间的变化或者事件的变化而改变"/>
+         <Text layoutX="14.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="概率啥的肯定在核心代码里面啦,有能力的可以自己去seesee代码"/>
+         <Text layoutX="14.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="事件显示是显示在消息里的，消息是一个窗口，会弹出。当然没有记录的qwq"/>
+         <Text layoutX="14.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="还有很多没写到,难得写了,自己摸索吧"/>
+         <Text layoutX="409.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="淦，看这里干嘛，去玩啊！！！"/>
+         <Button fx:id="back" layoutX="518.0" layoutY="346.0" mnemonicParsing="false" onAction="#onBack"
+                 text="返回"/>
+      </AnchorPane>
+   </ScrollPane>
+</Pane>

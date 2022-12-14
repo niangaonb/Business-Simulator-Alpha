@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.niangaoa.YingYe.Ctrller.YingYeMapCtrl">
+   <Button layoutX="14.0" layoutY="177.0" mnemonicParsing="false" text="年糕武器店"/>
+   <Button layoutX="273.0" layoutY="177.0" mnemonicParsing="false" text="黑市"/>
+   <Button layoutX="531.0" layoutY="177.0" mnemonicParsing="false" text="进货场"/>
+   <Button layoutX="266.0" layoutY="90.0" mnemonicParsing="false" text="年糕城"/>
+   <Button layoutX="260.0" layoutY="306.0" mnemonicParsing="false" text="年糕帝国"/>
+</AnchorPane>

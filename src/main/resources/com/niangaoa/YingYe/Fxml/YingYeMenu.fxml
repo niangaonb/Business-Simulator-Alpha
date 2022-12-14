@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="com.niangaoa.YingYe.Ctrller.YingYeMenuCtrl">
+    <Text layoutX="255.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="营业模拟器">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Text>
+    <Button fx:id="Exit1" layoutX="522.0" layoutY="348.0" mnemonicParsing="false" onAction="#onExit" text="退出游戏"/>
+    <HBox layoutX="200.0" layoutY="88.0" prefHeight="100.0" prefWidth="200.0">
+        <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="教程" fx:id="Tutorial" onAction="#onTutorial"/>
+        <Button fx:id="Start1" mnemonicParsing="false" onAction="#onStart" prefHeight="23.0" prefWidth="101.0"
+                text="开始游戏"/>
+    </HBox>
+    <Text layoutX="359.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By 好吃的年糕啊"/>
+    <Text fill="#ff6100" layoutX="188.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tips:先看教程哦">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Text>
+</Pane>
