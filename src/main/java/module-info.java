@@ -7,6 +7,7 @@ module com.niangaoa.YingYe {
     requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires org.jetbrains.annotations;
 
     opens com.niangaoa.YingYe.Ctrller to javafx.fxml;
     exports com.niangaoa.YingYe;

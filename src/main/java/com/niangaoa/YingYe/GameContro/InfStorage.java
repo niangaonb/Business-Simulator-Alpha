@@ -1,4 +1,4 @@
-package com.niangaoa.YingYe.GameContro.InfStorage;
+package com.niangaoa.YingYe.GameContro;
 
 public class InfStorage {
     public String messageNoStg() {
