@@ -14,6 +14,7 @@ import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class YingYeGameCtrl implements Initializable {
@@ -306,23 +307,9 @@ public class YingYeGameCtrl implements Initializable {
     }
     //分-------------------------------------割-------------------------------------线
 
-    public LinkedList<Integer> buyData = new LinkedList<>();
-
-    public Button[] buttons = new Button[12];
+    public List<Integer> buyData = new LinkedList<>();
 
     public YingYeGameCtrl() {
-        buttons[0] = buy1;
-        buttons[1] = buy2;
-        buttons[2] = buy3;
-        buttons[3] = buy4;
-        buttons[4] = buy5;
-        buttons[5] = buy6;
-        buttons[6] = buy7;
-        buttons[7] = buy8;
-        buttons[8] = buy9;
-        buttons[9] = buy10;
-        buttons[10] = buy11;
-        buttons[11] = buy12;
 
         buyData.add(3000);
         buyData.add(3500);
@@ -341,11 +328,27 @@ public class YingYeGameCtrl implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        for (Button button : buttons) {
-//            button.getStyleClass().setAll("btn", "btn-info");
-//        }
-        buttons[0].getStyleClass().setAll("btn", "btn-info");
         pane.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
+        {
+            List<Button> arrayList = new LinkedList<>();
+            arrayList.add(buy1);
+            arrayList.add(buy2);
+            arrayList.add(buy3);
+            arrayList.add(buy4);
+            arrayList.add(buy5);
+            arrayList.add(buy6);
+            arrayList.add(buy7);
+            arrayList.add(buy8);
+            arrayList.add(buy9);
+            arrayList.add(buy10);
+            arrayList.add(buy11);
+            arrayList.add(buy12);
+            for (Button list1 :
+                    arrayList) {
+                list1.getStyleClass().add("btn");
+            }
+        }
+
         day.setText(String.valueOf(daySet));
         int moneySet = 50000000;
         money.setText(String.valueOf(moneySet));
