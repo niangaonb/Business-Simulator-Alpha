@@ -136,6 +136,7 @@ public class YingYeGameCtrl implements Initializable {
 
 
     BuySell buySell = new BuySell();
+    GameData gameData = new GameData();
 
 
     public YingYeGameCtrl() {
@@ -157,112 +158,112 @@ public class YingYeGameCtrl implements Initializable {
 
     @FXML
     private void onBuy1() {
-        buySell.onBuy(GameData.buyData.get(0), 1, have1);
+        buySell.onBuy(gameData.buyData.get(0), 1, have1);
     }
 
     @FXML
     private void onBuy2() {
-        buySell.onBuy(GameData.buyData.get(1), 1, have2);
+        buySell.onBuy(gameData.buyData.get(1), 1, have2);
     }
     @FXML
     private void onBuy3() {
-        buySell.onBuy(GameData.buyData.get(2), 1, have3);
+        buySell.onBuy(gameData.buyData.get(2), 1, have3);
     }
     @FXML
     private void onBuy4() {
-        buySell.onBuy(GameData.buyData.get(3), 1, have4);
+        buySell.onBuy(gameData.buyData.get(3), 1, have4);
     }
     @FXML
     private void onBuy5() {
-        buySell.onBuy(GameData.buyData.get(4), 10, have5);
+        buySell.onBuy(gameData.buyData.get(4), 10, have5);
     }
     @FXML
     private void onBuy6() {
-        buySell.onBuy(GameData.buyData.get(5), 10, have6);
+        buySell.onBuy(gameData.buyData.get(5), 10, have6);
     }
     @FXML
     private void onBuy7() {
-        buySell.onBuy(GameData.buyData.get(6), 2, have7);
+        buySell.onBuy(gameData.buyData.get(6), 2, have7);
     }
     @FXML
     private void onBuy8() {
-        buySell.onBuy(GameData.buyData.get(7), 1, have8);
+        buySell.onBuy(gameData.buyData.get(7), 1, have8);
     }
     @FXML
     private void onBuy9() {
-        buySell.onBuy(GameData.buyData.get(8), 1, have9);
+        buySell.onBuy(gameData.buyData.get(8), 1, have9);
     }
     @FXML
     private void onBuy10() {
-        buySell.onBuy(GameData.buyData.get(9), 1, have10);
+        buySell.onBuy(gameData.buyData.get(9), 1, have10);
     }
     @FXML
     private void onBuy11() {
-        buySell.onBuy(GameData.buyData.get(10), 1, have11);
+        buySell.onBuy(gameData.buyData.get(10), 1, have11);
     }
     @FXML
     private void onBuy12() {
-        buySell.onBuy(GameData.buyData.get(11), 1,have12);
+        buySell.onBuy(gameData.buyData.get(11), 1,have12);
     }
 
     @FXML
     private void onSell1() {
-        buySell.onSell(GameData.buyData.get(0), 1, have1);
+        buySell.onSell(gameData.buyData.get(0), 1, have1);
     }
 
     @FXML
     private void onSell2() {
-        buySell.onSell(GameData.buyData.get(1), 1, have2);
+        buySell.onSell(gameData.buyData.get(1), 1, have2);
     }
 
     @FXML
     private void onSell3() {
-        buySell.onSell(GameData.buyData.get(2), 1, have3);
+        buySell.onSell(gameData.buyData.get(2), 1, have3);
     }
 
     @FXML
     private void onSell4() {
-        buySell.onSell(GameData.buyData.get(3), 1, have4);
+        buySell.onSell(gameData.buyData.get(3), 1, have4);
     }
 
     @FXML
     private void onSell5() {
-        buySell.onSell(GameData.buyData.get(4), 10, have5);
+        buySell.onSell(gameData.buyData.get(4), 10, have5);
     }
 
     @FXML
     private void onSell6() {
-        buySell.onSell(GameData.buyData.get(5), 1, have6);
+        buySell.onSell(gameData.buyData.get(5), 1, have6);
     }
 
     @FXML
     private void onSell7() {
-        buySell.onSell(GameData.buyData.get(6), 2, have7);
+        buySell.onSell(gameData.buyData.get(6), 2, have7);
     }
 
     @FXML
     private void onSell8() {
-        buySell.onSell(GameData.buyData.get(7), 1, have8);
+        buySell.onSell(gameData.buyData.get(7), 1, have8);
     }
 
     @FXML
     private void onSell9() {
-        buySell.onSell(GameData.buyData.get(8), 1, have9);
+        buySell.onSell(gameData.buyData.get(8), 1, have9);
     }
 
     @FXML
     private void onSell10() {
-        buySell.onSell(GameData.buyData.get(9), 1, have10);
+        buySell.onSell(gameData.buyData.get(9), 1, have10);
     }
 
     @FXML
     private void onSell11() {
-        buySell.onSell(GameData.buyData.get(10), 1, have11);
+        buySell.onSell(gameData.buyData.get(10), 1, have11);
     }
 
     @FXML
     private void onSell12() {
-        buySell.onSell(GameData.buyData.get(11), 5, have12);
+        buySell.onSell(gameData.buyData.get(11), 5, have12);
     }
     //分-------------------------------------割-------------------------------------线
     @FXML
@@ -295,20 +296,20 @@ public class YingYeGameCtrl implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         pane.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
         {
-            GameData.arrayList.add(buy1);
-            GameData.arrayList.add(buy2);
-            GameData.arrayList.add(buy3);
-            GameData.arrayList.add(buy4);
-            GameData.arrayList.add(buy5);
-            GameData.arrayList.add(buy6);
-            GameData.arrayList.add(buy7);
-            GameData.arrayList.add(buy8);
-            GameData.arrayList.add(buy9);
-            GameData.arrayList.add(buy10);
-            GameData.arrayList.add(buy11);
-            GameData.arrayList.add(buy12);
+            gameData.addButtonToArray(buy1);
+            gameData.addButtonToArray(buy2);
+            gameData.addButtonToArray(buy3);
+            gameData.addButtonToArray(buy4);
+            gameData.addButtonToArray(buy5);
+            gameData.addButtonToArray(buy6);
+            gameData.addButtonToArray(buy7);
+            gameData.addButtonToArray(buy8);
+            gameData.addButtonToArray(buy9);
+            gameData.addButtonToArray(buy10);
+            gameData.addButtonToArray(buy11);
+            gameData.addButtonToArray(buy12);
 
-            GameData.addCssByArray(GameData.arrayList, "btn");
+            gameData.addCssByArray(gameData.arrayList, "btn");
         }
 
         day.setText(String.valueOf(daySet));
