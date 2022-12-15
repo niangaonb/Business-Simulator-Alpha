@@ -12,9 +12,8 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.IOException;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.util.ResourceBundle;
 
 public class YingYeGameCtrl implements Initializable {
@@ -53,7 +52,7 @@ public class YingYeGameCtrl implements Initializable {
     @FXML
     private Text Health;
 
-    //分-------------------------------------割-------------------------------------线
+
     @FXML
     private Button buy1 = new Button();
     @FXML
@@ -269,29 +268,12 @@ public class YingYeGameCtrl implements Initializable {
     }
     //分-------------------------------------割-------------------------------------线
     @FXML
-    private void onRead() throws IOException {
-        File f = new File("saves.ini");
-        FileInputStream fileInputStream = new FileInputStream(f);
-        InputStreamReader reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
-        reader.close();
-        fileInputStream.close();
+    private void onRead() {
     }
 
     @FXML
-    private void onWrite() throws IOException {
-        File f = new File("saves.ini");
-        FileOutputStream fileOutputStream = new FileOutputStream(f);
-        OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
-        writer.append(money.getText());
-
-        writer.append(Health.getText());
-
-        writer.close();
-
-        fileOutputStream.close();
-        System.out.println("write successfully");
+    private void onWrite() {
     }
-
 
 
     @Override
