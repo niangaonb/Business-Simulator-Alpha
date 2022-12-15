@@ -1,11 +1,15 @@
 .announcement {
-    -fx-background-color: black;
+    -fx-background-color: #6c6c6c;
 }
 
 .menu1 {
-    -fx-border-color: black;
+    -fx-border-color: #6c6c6c;
+    -fx-border-width: 5px;
+    -fx-border-radius: 10px;
 }
 
 .gui1 {
-    -fx-border-color: black;
+    -fx-border-color: #6c6c6c;
+    -fx-border-width: 5px;
+    -fx-border-radius: 10px;
 }
