@@ -18,65 +18,77 @@ import java.util.ResourceBundle;
 
 public class YingYeGameCtrl implements Initializable {
     @FXML
+    public Text honor = new Text();
+    @FXML
+    public Text tired = new Text();
+    @FXML
+    public Text level = new Text();
+    @FXML
+    public Text xp = new Text();
+    @FXML
+    public Text hunger = new Text();
+    @FXML
+    public Text thinking = new Text();
+    @FXML
     private GridPane gridPane;
     @FXML
-    private Text storage = new Text();
+    public Text storage = new Text();
     @FXML
     private Button write;
     @FXML
     private Button read;
     @FXML
-    private Text have1;
+    public Text have1 = new Text();
     @FXML
-    private Text have2;
+    public Text have2 = new Text();
     @FXML
-    private Text have3;
+    public Text have3 = new Text();
     @FXML
-    private Text have4;
+    public Text have4 = new Text();
     @FXML
-    private Text have5;
+    public Text have5 = new Text();
     @FXML
-    private Text have6;
+    public Text have6 = new Text();
     @FXML
-    private Text have7;
+    public Text have7 = new Text();
     @FXML
-    private Text have8;
+    public Text have8 = new Text();
     @FXML
-    private Text have9;
+    public Text have9 = new Text();
     @FXML
-    private Text have10;
+    public Text have10 = new Text();
     @FXML
-    private Text have11;
+    public Text have11 = new Text();
     @FXML
-    private Text have12;
+    public Text have12 = new Text();
     @FXML
-    private Text Health;
+    public Text Health = new Text();
 
 
     @FXML
-    private Button buy1 = new Button();
+    private Button buy1;
     @FXML
-    private Button buy2 = new Button();
+    private Button buy2;
     @FXML
-    private Button buy3 = new Button();
+    private Button buy3;
     @FXML
-    private Button buy4 = new Button();
+    private Button buy4;
     @FXML
-    private Button buy5 = new Button();
+    private Button buy5;
     @FXML
-    private Button buy6 = new Button();
+    private Button buy6;
     @FXML
-    private Button buy7 = new Button();
+    private Button buy7;
     @FXML
-    private Button buy8 = new Button();
+    private Button buy8;
     @FXML
-    private Button buy9 = new Button();
+    private Button buy9;
     @FXML
-    private Button buy10 = new Button();
+    private Button buy10;
     @FXML
-    private Button buy11 = new Button();
+    private Button buy11;
     @FXML
-    private Button buy12 = new Button();
+    private Button buy12;
 
     @FXML
     private Button sell1;
@@ -115,7 +127,7 @@ public class YingYeGameCtrl implements Initializable {
     private Button sell12;
 
     @FXML
-    private Text money = new Text();
+    public Text money = new Text();
 
 
     @FXML
@@ -137,7 +149,7 @@ public class YingYeGameCtrl implements Initializable {
 
 
     BuySell buySell = new BuySell();
-    GameData gameData = new GameData();
+    public GameData gameData = new GameData();
 
 
     public YingYeGameCtrl() {
@@ -317,5 +329,29 @@ public class YingYeGameCtrl implements Initializable {
         storage.setText(String.valueOf(3000));
         buySell.setMoney(money);
         buySell.setStorage(storage);
+    }
+
+    public void addTextToArray() {
+        gameData.addGameData(have1.getText());
+        gameData.addGameData(have2.getText());
+        gameData.addGameData(have3.getText());
+        gameData.addGameData(have4.getText());
+        gameData.addGameData(have5.getText());
+        gameData.addGameData(have6.getText());
+        gameData.addGameData(have7.getText());
+        gameData.addGameData(have8.getText());
+        gameData.addGameData(have9.getText());
+        gameData.addGameData(have10.getText());
+        gameData.addGameData(have11.getText());
+        gameData.addGameData(have12.getText());
+        gameData.addGameData(money.getText());
+        gameData.addGameData(Health.getText());
+        gameData.addGameData(honor.getText());
+        gameData.addGameData(storage.getText());
+        gameData.addGameData(thinking.getText());
+        gameData.addGameData(tired.getText());
+        gameData.addGameData(level.getText());
+        gameData.addGameData(xp.getText());
+        gameData.addGameData(hunger.getText());
     }
 }

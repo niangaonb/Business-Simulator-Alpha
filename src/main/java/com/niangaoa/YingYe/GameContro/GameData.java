@@ -3,13 +3,14 @@ package com.niangaoa.YingYe.GameContro;
 import javafx.scene.control.Button;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class GameData {
-    public List<Integer> moneyData = new LinkedList<>();
-    public List<Button> buyList = new LinkedList<>();
-    public List<Button> sellList = new LinkedList<>();
+    public List<Integer> moneyData = new ArrayList<>();
+    public List<Button> buyList = new ArrayList<>();
+    public List<Button> sellList = new ArrayList<>();
+    public List<String> gameDataList = new ArrayList<>();
 
     public GameData() {
         moneyData.add(3000);
@@ -27,18 +28,11 @@ public class GameData {
     }
 
     public void addButtonToBuyArray(Button button) {
-        buyList.add(button);
+        this.buyList.add(button);
     }
 
     public void addButtonToSellArray(Button button) {
-        sellList.add(button);
-    }
-
-    public void addCssByArray(@NotNull List<Button> buttonArrary, String css1) {
-        for (Button b :
-                buttonArrary) {
-            b.getStyleClass().addAll(css1);
-        }
+        this.sellList.add(button);
     }
 
     public void addCssByArray(@NotNull List<Button> buttonArrary, String css1, String css2) {
@@ -46,5 +40,13 @@ public class GameData {
                 buttonArrary) {
             b.getStyleClass().addAll(css1, css2);
         }
+    }
+
+    public void addGameData(String gameData) {
+        this.gameDataList.add(gameData);
+    }
+
+    public List<String> getGameDataList() {
+        return gameDataList;
     }
 }
