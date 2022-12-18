@@ -34,9 +34,9 @@ public class GameData {
         this.sellList.add(button);
     }
 
-    public void addCssByArray(@NotNull List<Button> buttonArrary, String css1, String css2) {
+    public void addCssByArray(@NotNull List<Button> buttonArray, String css1, String css2) {
         for (Button b :
-                buttonArrary) {
+                buttonArray) {
             b.getStyleClass().addAll(css1, css2);
         }
     }

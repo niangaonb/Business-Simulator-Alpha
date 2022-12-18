@@ -1,5 +1,34 @@
 package com.niangaoa.BusinessSimulator.GameContro;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import javafx.scene.text.Text;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 public class DataSave {
+    private final JsonObject jsonObject = new JsonObject();
+    public void write(List<String> dataList,List<String> nameList) throws IOException {
+        File file = new File("saves.json");
+        FileOutputStream fileOutputStream = new FileOutputStream(file);
+        OutputStreamWriter outputStream = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
+        for (int i = 0; i <= 20; i++) {
+            jsonObject.addProperty(nameList.get(i), dataList.get(i));
+        }
+        outputStream.append(jsonObject.toString());
+        outputStream.close();
+        fileOutputStream.close();
+    }
+
+    public void read(List<Text> textList, List<String> nameList) throws FileNotFoundException {
+        JsonObject jsonObject1 = (JsonObject) JsonParser.parseReader(new FileReader("saves.json"));
+        for (int i = 0; i <= 20; i++) {
+            textList.get(i).setText(jsonObject1.get(nameList.get(i)).getAsString());
+        }
+    }
+
+    public static void main(String[] args) {
+    }
 }

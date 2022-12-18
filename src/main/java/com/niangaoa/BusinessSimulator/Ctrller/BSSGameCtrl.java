@@ -3,6 +3,7 @@ package com.niangaoa.BusinessSimulator.Ctrller;
 
 import com.niangaoa.BusinessSimulator.App.BSSMap;
 import com.niangaoa.BusinessSimulator.GameContro.BuySell;
+import com.niangaoa.BusinessSimulator.GameContro.DataSave;
 import com.niangaoa.BusinessSimulator.GameContro.GameData;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,6 +13,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -151,6 +153,9 @@ public class BSSGameCtrl implements Initializable {
     private Pane pane;
 
     private final List<String> gameDataList = new ArrayList<>();
+    private final List<String> nameDataList = new ArrayList<>();
+    private final List<Text> textArrayList = new ArrayList<>();
+    private final DataSave dataSave = new DataSave();
     private final BuySell buySell = new BuySell();
     public GameData gameData = new GameData();
 
@@ -166,114 +171,98 @@ public class BSSGameCtrl implements Initializable {
         Health.setText(String.valueOf(healthSet));
     }
 
-    @FXML
-    private void onBuy1() {
+    @FXML private void onBuy1() {
         buySell.onBuy(gameData.moneyData.get(0), 1, have1);
     }
-
-    @FXML
-    private void onBuy2() {
+    @FXML private void onBuy2() {
         buySell.onBuy(gameData.moneyData.get(1), 1, have2);
     }
-    @FXML
-    private void onBuy3() {
+    @FXML private void onBuy3() {
         buySell.onBuy(gameData.moneyData.get(2), 1, have3);
     }
-    @FXML
-    private void onBuy4() {
+    @FXML private void onBuy4() {
         buySell.onBuy(gameData.moneyData.get(3), 1, have4);
     }
-    @FXML
-    private void onBuy5() {
+    @FXML private void onBuy5() {
         buySell.onBuy(gameData.moneyData.get(4), 10, have5);
     }
-    @FXML
-    private void onBuy6() {
+    @FXML private void onBuy6() {
         buySell.onBuy(gameData.moneyData.get(5), 10, have6);
     }
-    @FXML
-    private void onBuy7() {
+    @FXML private void onBuy7() {
         buySell.onBuy(gameData.moneyData.get(6), 2, have7);
     }
-    @FXML
-    private void onBuy8() {
+    @FXML private void onBuy8() {
         buySell.onBuy(gameData.moneyData.get(7), 1, have8);
     }
-    @FXML
-    private void onBuy9() {
+    @FXML private void onBuy9() {
         buySell.onBuy(gameData.moneyData.get(8), 1, have9);
     }
-    @FXML
-    private void onBuy10() {
+    @FXML private void onBuy10() {
         buySell.onBuy(gameData.moneyData.get(9), 1, have10);
     }
-    @FXML
-    private void onBuy11() {
+    @FXML private void onBuy11() {
         buySell.onBuy(gameData.moneyData.get(10), 1, have11);
     }
-    @FXML
-    private void onBuy12() {
+    @FXML private void onBuy12() {
         buySell.onBuy(gameData.moneyData.get(11), 1,have12);
     }
-    @FXML
-    private void onSell1() {
+    @FXML private void onSell1() {
         buySell.onSell(gameData.moneyData.get(0), 1, have1);
     }
-    @FXML
-    private void onSell2() {
+    @FXML private void onSell2() {
         buySell.onSell(gameData.moneyData.get(1), 1, have2);
     }
-    @FXML
-    private void onSell3() {
+    @FXML private void onSell3() {
         buySell.onSell(gameData.moneyData.get(2), 1, have3);
     }
-    @FXML
-    private void onSell4() {
+    @FXML private void onSell4() {
         buySell.onSell(gameData.moneyData.get(3), 1, have4);
     }
-    @FXML
-    private void onSell5() {
+    @FXML private void onSell5() {
         buySell.onSell(gameData.moneyData.get(4), 10, have5);
     }
-    @FXML
-    private void onSell6() {
+    @FXML private void onSell6() {
         buySell.onSell(gameData.moneyData.get(5), 1, have6);
     }
-    @FXML
-    private void onSell7() {
+    @FXML private void onSell7() {
         buySell.onSell(gameData.moneyData.get(6), 2, have7);
     }
-    @FXML
-    private void onSell8() {
+    @FXML private void onSell8() {
         buySell.onSell(gameData.moneyData.get(7), 1, have8);
     }
-    @FXML
-    private void onSell9() {
+    @FXML private void onSell9() {
         buySell.onSell(gameData.moneyData.get(8), 1, have9);
     }
-    @FXML
-    private void onSell10() {
+    @FXML private void onSell10() {
         buySell.onSell(gameData.moneyData.get(9), 1, have10);
     }
-    @FXML
-    private void onSell11() {
+    @FXML private void onSell11() {
         buySell.onSell(gameData.moneyData.get(10), 1, have11);
     }
-    @FXML
-    private void onSell12() {
+    @FXML private void onSell12() {
         buySell.onSell(gameData.moneyData.get(11), 5, have12);
     }
 
     @FXML
-    private void onRead() {
+    private void onRead() throws FileNotFoundException {
+        this.dataSave.read(textArrayList, nameDataList);
     }
 
     @FXML
-    private void onWrite() {
+    private void onWrite() throws IOException {
+        this.dataSave.write(gameDataList, nameDataList);
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        day.setText(String.valueOf(daySet));
+        int moneySet = 50000000;
+        money.setText(String.valueOf(moneySet));
+        storage.setText(String.valueOf(3000));
+        System.out.println(money.getText());
+        buySell.setMoney(money);
+        buySell.setStorage(storage);
         {
             gameData.addButtonToBuyArray(buy1);
             gameData.addButtonToBuyArray(buy2);
@@ -329,12 +318,52 @@ public class BSSGameCtrl implements Initializable {
             addGameData(xp.getText());
             addGameData(hunger.getText());
         }
-        day.setText(String.valueOf(daySet));
-        int moneySet = 50000000;
-        money.setText(String.valueOf(moneySet));
-        storage.setText(String.valueOf(3000));
-        buySell.setMoney(money);
-        buySell.setStorage(storage);
+        {
+            textArrayList.add(have1);
+            textArrayList.add(have2);
+            textArrayList.add(have3);
+            textArrayList.add(have4);
+            textArrayList.add(have5);
+            textArrayList.add(have6);
+            textArrayList.add(have7);
+            textArrayList.add(have8);
+            textArrayList.add(have9);
+            textArrayList.add(have10);
+            textArrayList.add(have11);
+            textArrayList.add(have12);
+            textArrayList.add(money);
+            textArrayList.add(Health);
+            textArrayList.add(honor);
+            textArrayList.add(storage);
+            textArrayList.add(thinking);
+            textArrayList.add(tired);
+            textArrayList.add(level);
+            textArrayList.add(xp);
+            textArrayList.add(hunger);
+        }
+        {
+            nameDataList.add("have1");
+            nameDataList.add("have2");
+            nameDataList.add("have3");
+            nameDataList.add("have4");
+            nameDataList.add("have5");
+            nameDataList.add("have6");
+            nameDataList.add("have7");
+            nameDataList.add("have8");
+            nameDataList.add("have9");
+            nameDataList.add("have10");
+            nameDataList.add("have11");
+            nameDataList.add("have12");
+            nameDataList.add("money");
+            nameDataList.add("Health");
+            nameDataList.add("honor");
+            nameDataList.add("storage");
+            nameDataList.add("thinking");
+            nameDataList.add("tired");
+            nameDataList.add("level");
+            nameDataList.add("xp");
+            nameDataList.add("hunger");
+        }
     }
     private void addGameData(String gameData) {
         gameDataList.add(gameData);
