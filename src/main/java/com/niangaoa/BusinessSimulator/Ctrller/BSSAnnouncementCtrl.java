@@ -1,6 +1,6 @@
-package com.niangaoa.YingYe.Ctrller;
+package com.niangaoa.BusinessSimulator.Ctrller;
 
-import com.niangaoa.YingYe.App.YingYeMenu;
+import com.niangaoa.BusinessSimulator.App.BSSMenu;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -11,7 +11,7 @@ import org.kordamp.bootstrapfx.BootstrapFX;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class YingYeAnnouncementCtrl implements Initializable {
+public class BSSAnnouncementCtrl implements Initializable {
     @FXML
     private Button Next1 = new Button();
 
@@ -22,7 +22,7 @@ public class YingYeAnnouncementCtrl implements Initializable {
     private void onChick() throws Exception {
         Stage stage = (Stage)Next1.getScene().getWindow();
         stage.close();
-        new YingYeMenu().start(new Stage());
+        new BSSMenu().start(new Stage());
     }
 
     @Override

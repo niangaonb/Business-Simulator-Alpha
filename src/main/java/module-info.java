@@ -1,4 +1,4 @@
-module com.niangaoa.YingYe {
+module com.niangaoa.BusinessSimulator {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,7 @@ module com.niangaoa.YingYe {
     requires org.jetbrains.annotations;
     requires com.google.gson;
 
-    opens com.niangaoa.YingYe.Ctrller to javafx.fxml;
-    exports com.niangaoa.YingYe;
-    exports com.niangaoa.YingYe.App;
+    opens com.niangaoa.BusinessSimulator.Ctrller to javafx.fxml;
+    exports com.niangaoa.BusinessSimulator;
+    exports com.niangaoa.BusinessSimulator.App;
 }

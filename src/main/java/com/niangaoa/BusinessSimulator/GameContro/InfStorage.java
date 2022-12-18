@@ -1,4 +1,4 @@
-package com.niangaoa.YingYe.GameContro;
+package com.niangaoa.BusinessSimulator.GameContro;
 
 public class InfStorage {
     public String messageNoStg() {

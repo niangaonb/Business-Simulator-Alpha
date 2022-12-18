@@ -1,4 +1,4 @@
-package com.niangaoa.YingYe.GameContro;
+package com.niangaoa.BusinessSimulator.GameContro;
 
 import javafx.scene.control.Button;
 import org.jetbrains.annotations.NotNull;

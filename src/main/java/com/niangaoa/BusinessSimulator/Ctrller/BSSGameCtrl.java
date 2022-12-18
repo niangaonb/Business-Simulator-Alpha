@@ -1,9 +1,9 @@
-package com.niangaoa.YingYe.Ctrller;
+package com.niangaoa.BusinessSimulator.Ctrller;
 
 
-import com.niangaoa.YingYe.App.YingYeMap;
-import com.niangaoa.YingYe.GameContro.BuySell;
-import com.niangaoa.YingYe.GameContro.GameData;
+import com.niangaoa.BusinessSimulator.App.BSSMap;
+import com.niangaoa.BusinessSimulator.GameContro.BuySell;
+import com.niangaoa.BusinessSimulator.GameContro.GameData;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class YingYeGameCtrl implements Initializable {
+public class BSSGameCtrl implements Initializable {
     @FXML
     public Text honor = new Text();
     @FXML
@@ -152,13 +152,13 @@ public class YingYeGameCtrl implements Initializable {
     public GameData gameData = new GameData();
 
 
-    public YingYeGameCtrl() {
+    public BSSGameCtrl() {
     }
 
 
     @FXML
     private void onMapChick() throws IOException {
-        new YingYeMap().start(new Stage());
+        new BSSMap().start(new Stage());
     }
 
     @FXML

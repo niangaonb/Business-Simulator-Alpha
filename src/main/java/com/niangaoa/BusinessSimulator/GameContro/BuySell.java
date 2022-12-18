@@ -1,4 +1,4 @@
-package com.niangaoa.YingYe.GameContro;
+package com.niangaoa.BusinessSimulator.GameContro;
 
 import javafx.scene.text.Text;
 import org.jetbrains.annotations.NotNull;

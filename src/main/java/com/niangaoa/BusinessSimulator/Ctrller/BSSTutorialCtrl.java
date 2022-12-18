@@ -1,11 +1,11 @@
-package com.niangaoa.YingYe.Ctrller;
+package com.niangaoa.BusinessSimulator.Ctrller;
 
-import com.niangaoa.YingYe.App.YingYeMenu;
+import com.niangaoa.BusinessSimulator.App.BSSMenu;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class YingYeTutorialCtrl {
+public class BSSTutorialCtrl {
     @FXML
     private Button back;
 
@@ -13,6 +13,6 @@ public class YingYeTutorialCtrl {
     private void onBack() throws Exception {
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
-        new YingYeMenu().start(new Stage());
+        new BSSMenu().start(new Stage());
     }
 }

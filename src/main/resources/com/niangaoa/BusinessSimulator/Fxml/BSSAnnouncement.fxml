@@ -6,7 +6,7 @@
 <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
       minWidth="-Infinity"
       prefHeight="400.0" prefWidth="600.0" styleClass="announcement" stylesheets="@../AllCss.css"
-      xmlns="http://javafx.com/javafx/8" fx:controller="com.niangaoa.YingYe.Ctrller.YingYeAnnouncementCtrl" fx:id="pane">
+      xmlns="http://javafx.com/javafx/8" fx:controller="com.niangaoa.BusinessSimulator.Ctrller.BSSAnnouncementCtrl" fx:id="pane">
    <Text fill="WHITE" layoutX="31.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="纯JavaFx手写，绝对安全无毒">
       <font>
          <Font size="18.0"/>

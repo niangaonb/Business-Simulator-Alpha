@@ -7,7 +7,7 @@
 <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
       minWidth="-Infinity"
       prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
-      fx:controller="com.niangaoa.YingYe.Ctrller.YingYeMenuCtrl">
+      fx:controller="com.niangaoa.BusinessSimulator.Ctrller.BSSMenuCtrl">
     <Text layoutX="255.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="营业模拟器">
         <font>
             <Font size="18.0"/>

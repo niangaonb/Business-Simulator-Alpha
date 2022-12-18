@@ -1,4 +1,4 @@
-package com.niangaoa.YingYe.Ctrller;
+package com.niangaoa.BusinessSimulator.Ctrller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,7 +8,7 @@ import javafx.scene.text.TextAlignment;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class YingYeMessageCtrl implements Initializable {
+public class BSSMessageCtrl implements Initializable {
     @FXML
     public Text message1 = new Text();
 
