@@ -10,7 +10,6 @@ public class GameData {
     public List<Integer> moneyData = new ArrayList<>();
     public List<Button> buyList = new ArrayList<>();
     public List<Button> sellList = new ArrayList<>();
-    public List<String> gameDataList = new ArrayList<>();
 
     public GameData() {
         moneyData.add(3000);
@@ -40,13 +39,5 @@ public class GameData {
                 buttonArrary) {
             b.getStyleClass().addAll(css1, css2);
         }
-    }
-
-    public void addGameData(String gameData) {
-        this.gameDataList.add(gameData);
-    }
-
-    public List<String> getGameDataList() {
-        return gameDataList;
     }
 }
