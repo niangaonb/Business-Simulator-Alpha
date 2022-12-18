@@ -37,7 +37,7 @@ public class YingYeGameCtrl implements Initializable {
     private Button write;
     @FXML
     private Button read;
-    @FXML
+
     public Text have1 = new Text();
     @FXML
     public Text have2 = new Text();

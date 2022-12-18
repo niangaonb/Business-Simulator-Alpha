@@ -43,7 +43,7 @@
         <Button fx:id="buy2" mnemonicParsing="false" onAction="#onBuy2" prefHeight="60.0" prefWidth="100.0" text="购买" GridPane.columnIndex="3" GridPane.rowIndex="2" />
         <Button fx:id="sell2" mnemonicParsing="false" onAction="#onSell2" prefHeight="60.0" prefWidth="100.0" text="售出" GridPane.columnIndex="4" GridPane.rowIndex="2" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii True专辑" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.rowIndex="1" />
-        <Text fx:id="have1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Text fx:id="have1" text="114" accessibleRole="IMAGE_VIEW" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="1" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3000/1" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Text fx:id="have2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="2" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii Stories专辑" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.rowIndex="2" />
