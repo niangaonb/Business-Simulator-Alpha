@@ -13,3 +13,9 @@
     -fx-border-width: 5px;
     -fx-border-radius: 10px;
 }
+
+.barColor {
+    -fx-border-color: #6c6c6c;
+    -fx-border-radius: 5px;
+    -fx-background-color: #e7e7e7;
+}

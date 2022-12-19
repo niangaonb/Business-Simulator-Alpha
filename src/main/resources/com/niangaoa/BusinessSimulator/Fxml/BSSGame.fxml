@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niangaoa.BusinessSimulator.Ctrller.BSSGameCtrl">
-    <GridPane fx:id="gridPane" gridLinesVisible="true" layoutY="36.0" styleClass="menu1" stylesheets="@../AllCss.css">
+<Pane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="993.0" stylesheets="@../AllCss.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niangaoa.BusinessSimulator.Ctrller.BSSGameCtrl">
+    <GridPane fx:id="gridPane" gridLinesVisible="true" layoutY="78.0" styleClass="menu1" stylesheets="@../AllCss.css">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -43,7 +43,7 @@
         <Button fx:id="buy2" mnemonicParsing="false" onAction="#onBuy2" prefHeight="60.0" prefWidth="100.0" text="购买" GridPane.columnIndex="3" GridPane.rowIndex="2" />
         <Button fx:id="sell2" mnemonicParsing="false" onAction="#onSell2" prefHeight="60.0" prefWidth="100.0" text="售出" GridPane.columnIndex="4" GridPane.rowIndex="2" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii True专辑" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.rowIndex="1" />
-        <Text fx:id="have1" text="114" accessibleRole="IMAGE_VIEW" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Text fx:id="have1" accessibleRole="IMAGE_VIEW" strokeType="OUTSIDE" strokeWidth="0.0" text="114" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="1" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3000/1" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Text fx:id="have2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.columnIndex="2" GridPane.rowIndex="2" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avicii Stories专辑" textAlignment="CENTER" wrappingWidth="101.240234375" GridPane.rowIndex="2" />
@@ -99,12 +99,12 @@
         <Button fx:id="sell12" mnemonicParsing="false" onAction="#onSell12" prefHeight="60.0" prefWidth="100.0" text="售出" GridPane.columnIndex="4" GridPane.rowIndex="12" />
         <Button fx:id="buy11" mnemonicParsing="false" onAction="#onBuy11" prefHeight="60.0" prefWidth="100.0" text="购买" GridPane.columnIndex="3" GridPane.rowIndex="11" />
     </GridPane>
-    <Text layoutX="2.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="普通市场">
+    <Text layoutX="2.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="普通市场">
         <font>
          <Font size="18.0" />
         </font>
     </Text>
-    <Pane layoutX="-13.0" layoutY="499.0" prefHeight="227.0" prefWidth="502.0" styleClass="gui1" stylesheets="@../AllCss.css">
+    <Pane layoutY="501.0" prefHeight="227.0" prefWidth="502.0" styleClass="gui1" stylesheets="@../AllCss.css">
         <Text layoutX="20.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="金钱:" />
         <Text fx:id="money" layoutX="47.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
         <Text layoutX="125.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="健康值:" wrappingWidth="40.0" />
@@ -123,17 +123,15 @@
         <Text layoutX="346.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" fx:id="xp" />
         <Text layoutX="22.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="饥饿值:" />
         <Text fx:id="hunger" layoutX="61.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
-        <Button fx:id="read" layoutX="124.0" layoutY="91.0" mnemonicParsing="false" onAction="#onRead" text="读取" />
-        <Button fx:id="write" layoutX="186.0" layoutY="91.0" mnemonicParsing="false" onAction="#onWrite" stylesheets="@../AllCss.css" text="写入" />
     </Pane>
     <Text layoutX="2.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="人物属性">
         <font>
          <Font size="18.0" />
         </font>
     </Text>
-    <Pane layoutX="514.0" layoutY="36.0" prefHeight="68.0" prefWidth="465.0" styleClass="gui1" stylesheets="@../AllCss.css">
+    <Pane layoutX="514.0" layoutY="78.0" prefHeight="68.0" prefWidth="465.0" styleClass="gui1">
         <Button fx:id="map" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#onMapChick" text="地图" />
-        <Button layoutX="213.0" layoutY="29.0" mnemonicParsing="false" text="升级仓库" />
+        <Button fx:id="update" layoutX="213.0" layoutY="29.0" mnemonicParsing="false" onAction="#onUpdate" text="升级仓库" />
         <Text layoutX="85.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="你需要114514元以及5等级才能升级仓库" textAlignment="CENTER" wrappingWidth="321.0">
             <font>
                 <Font size="16.0" />
@@ -141,14 +139,19 @@
         </Text>
         <Button fx:id="Sleep" layoutX="412.0" layoutY="29.0" mnemonicParsing="false" onAction="#onSleep" text="睡觉" />
     </Pane>
-    <Text layoutX="638.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="第    天" wrappingWidth="263.0">
+    <Text layoutX="634.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="第    天" wrappingWidth="263.0">
         <font>
             <Font size="80.0" />
         </font>
     </Text>
-    <Text fx:id="day" fill="RED" layoutX="718.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="94.0">
+    <Text fx:id="day" fill="RED" layoutX="719.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="94.0">
         <font>
             <Font size="80.0" />
         </font>
     </Text>
+    <ToolBar prefHeight="53.0" prefWidth="209.0" styleClass="barColor">
+        <Button fx:id="write" mnemonicParsing="false" onAction="#onWrite" prefHeight="42.0" prefWidth="93.0"
+                stylesheets="@../AllCss.css" text="写入"/>
+        <Button fx:id="read" mnemonicParsing="false" onAction="#onRead" prefHeight="42.0" prefWidth="93.0" text="读取"/>
+    </ToolBar>
 </Pane>
