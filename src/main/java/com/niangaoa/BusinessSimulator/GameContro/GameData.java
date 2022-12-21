@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameData {
+    private final List<String> gameDataList = new ArrayList<>();
     public List<Integer> moneyData = new ArrayList<>();
     public List<Button> buyList = new ArrayList<>();
     public List<Button> sellList = new ArrayList<>();
@@ -39,5 +40,12 @@ public class GameData {
                 buttonArray) {
             b.getStyleClass().addAll(css1, css2);
         }
+    }
+    public void addGameData(String gameData) {
+        gameDataList.add(gameData);
+    }
+
+    public List<String> getDameData() {
+        return gameDataList;
     }
 }

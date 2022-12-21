@@ -2,7 +2,7 @@ package com.niangaoa.BusinessSimulator.GameContro;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import javafx.scene.text.Text;
+import javafx.scene.control.Label;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
@@ -23,7 +23,7 @@ public class DataSave {
         fileOutputStream.close();
     }
 
-    public void read(@NotNull List<Text> textList, List<String> nameList) throws FileNotFoundException {
+    public void read(List<Label> textList, List<String> nameList) throws FileNotFoundException {
         JsonObject jsonObject1 = (JsonObject) JsonParser.parseReader(new FileReader("saves.json"));
         for (int i = 0; i < textList.size(); i++) {
             textList.get(i).setText(jsonObject1.get(nameList.get(i)).getAsString());

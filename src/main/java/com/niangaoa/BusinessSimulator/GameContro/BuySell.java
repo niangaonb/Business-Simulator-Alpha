@@ -1,13 +1,13 @@
 package com.niangaoa.BusinessSimulator.GameContro;
 
-import javafx.scene.text.Text;
+import javafx.scene.control.Label;
 import org.jetbrains.annotations.NotNull;
 
 public class BuySell {
-    private Text money = new Text();
-    private Text storage = new Text();
+    private Label money;
+    private Label storage;
 
-    public void onBuy(int buySet, int storageNeed, Text have) {
+    public void onBuy(int buySet, int storageNeed,@NotNull Label have) {
         int moneyGet = Integer.parseInt(money.getText());
         int storageGet = Integer.parseInt(storage.getText());
         if (moneyGet - buySet >= 0 && storageGet > 0) {
@@ -20,7 +20,7 @@ public class BuySell {
         }
     }
 
-    public void onSell(int sellMoney, int storageNeed, @NotNull Text have) {
+    public void onSell(int sellMoney, int storageNeed, @NotNull Label have) {
         int moneyGet = Integer.parseInt(money.getText());
         int storageGet = Integer.parseInt(storage.getText());
         int haveGet = Integer.parseInt(have.getText());
@@ -31,19 +31,19 @@ public class BuySell {
         }
     }
 
-    public void setMoney(Text moneySet) {
+    public void setMoney(Label moneySet) {
         this.money = moneySet;
     }
 
-    public void setStorage(Text storageSet) {
+    public void setStorage(Label storageSet) {
         this.storage = storageSet;
     }
 
-    public Text getMoney() {
-        return money;
+    public String getMoney() {
+        return money.getText();
     }
 
-    public Text getStorage() {
-        return storage;
+    public String getStorage() {
+        return storage.getText();
     }
 }

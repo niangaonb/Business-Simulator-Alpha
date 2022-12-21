@@ -2,6 +2,9 @@ module com.niangaoa.BusinessSimulator {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires javafx.graphics;
+    requires javafx.media;
+    requires javafx.base;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
