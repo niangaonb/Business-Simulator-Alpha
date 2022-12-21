@@ -5,6 +5,7 @@ import com.niangaoa.BusinessSimulator.App.BSSMap;
 import com.niangaoa.BusinessSimulator.GameContro.BuySell;
 import com.niangaoa.BusinessSimulator.GameContro.DataSave;
 import com.niangaoa.BusinessSimulator.GameContro.GameData;
+import eu.hansolo.medusa.Clock;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class BSSGameCtrl implements Initializable {
+    @FXML private Clock test;
     @FXML private Label honor;
     @FXML private Label tired;
     @FXML private Label level;

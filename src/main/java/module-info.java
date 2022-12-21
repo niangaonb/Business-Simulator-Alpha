@@ -5,6 +5,7 @@ module com.niangaoa.BusinessSimulator {
     requires javafx.graphics;
     requires javafx.media;
     requires javafx.base;
+    requires eu.hansolo.medusa;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;

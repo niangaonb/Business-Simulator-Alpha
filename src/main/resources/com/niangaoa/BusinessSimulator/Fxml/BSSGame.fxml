@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import eu.hansolo.medusa.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <Pane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="996.0" stylesheets="@../AllCss.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niangaoa.BusinessSimulator.Ctrller.BSSGameCtrl">
@@ -153,6 +155,16 @@
          <Font size="80.0" />
       </font>
    </Label>
+    <Clock fx:id="test" layoutX="645.0" layoutY="427.0" skinType="TEXT">
+      <knobColor>
+         <Color />
+      </knobColor>
+      <titleColor>
+         <Color red="0.8289473652839661" green="0.5487938523292542" blue="0.5487938523292542" />
+      </titleColor>
+      <customFont>
+         <Font name="Roboto Regular" size="25.0" />
+      </customFont></Clock>
    <rotationAxis>
       <Point3D />
    </rotationAxis>
